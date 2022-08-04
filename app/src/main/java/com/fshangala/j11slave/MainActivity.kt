@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.os.SystemClock
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import android.widget.TextView
@@ -53,6 +54,9 @@ class MainActivity : AppCompatActivity() {
                     toast!!.show()
                 }
                 "confirm_bet" -> {
+                    confirmBet()
+                }
+                "click" -> {
                     confirmBet()
                 }
                 else -> {
@@ -140,6 +144,9 @@ class MainActivity : AppCompatActivity() {
             R.id.preferencesBtn -> {
                 openConfig()
             }
+            R.id.aboutBtn -> {
+                openAbout()
+            }
             R.id.reloadBrowserBtn -> {
                 webView!!.reload()
             }
@@ -156,6 +163,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun openConfig(){
         val intent = Intent(this,ConfigActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun openAbout(){
+        val intent = Intent(this,AboutActivity::class.java)
         startActivity(intent)
     }
 }

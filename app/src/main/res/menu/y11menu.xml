@@ -17,4 +17,9 @@
         android:icon="@android:drawable/ic_menu_manage"
         android:title="@string/preferencesBtn"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/aboutBtn"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="@string/about"
+        app:showAsAction="ifRoom" />
 </menu>
