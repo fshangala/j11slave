@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">J11 Slave</string>
     <string name="app_version">J11S 1.0.0</string>
+    <string name="inputHostIpLabel">Host</string>
+    <string name="inputHostPortLabel">Port</string>
+    <string name="inputCodeLabel">Code</string>
+    <string name="saveBtn">Save</string>
+    <string name="reconnectBtn">Reconnect</string>
+    <string name="reloadBrowserBtn">Reload Browser</string>
+    <string name="preferencesBtn">Config</string>
 </resources>
