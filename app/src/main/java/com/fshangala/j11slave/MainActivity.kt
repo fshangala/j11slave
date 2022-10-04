@@ -92,16 +92,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onOpenBet(automationEvents: AutomationEvents) {
-        var Oteam = ""
         val Obacklay = automationEvents.eventArgs[1]
+        val betindex = automationEvents.eventArgs[0]
 
-        if (automationEvents.eventArgs[0] == "team1"){
-            Oteam = "0"
-        } else if (automationEvents.eventArgs[0] == "team2"){
-            Oteam = "1"
-        }
-
-        webView!!.evaluateJavascript("document.querySelectorAll(\".odd-button.$Obacklay-color\")[$Oteam].click();"){
+        webView!!.evaluateJavascript("document.querySelectorAll(\".odd-button.$Obacklay-color\")[$betindex].click();"){
             runOnUiThread{
                 slaveStatus!!.text = it
             }
