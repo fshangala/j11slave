@@ -9,4 +9,5 @@
     <string name="reloadBrowserBtn">Reload Browser</string>
     <string name="preferencesBtn">Config</string>
     <string name="about">About</string>
+    <string name="betSitesLabel">Bet Sites</string>
 </resources>
